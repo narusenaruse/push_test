@@ -1,0 +1,23 @@
+https://github.com/narusenaruse/push_test.git
+
+
+1.ローカルリポジトリ作成
+git init
+コマンド入力後、任意ファイルに.gitファイルがあるか確認
+
+2.pushしたいファイルの追加
+.gitファイルが作成されたファイルにpushしたいファイルを追加
+
+3.ファイルをインデックスに追加
+git add [インデックスに追加するファイル名]
+
+4.ローカルリポジトリにコミット
+git commit -m "[コミットメッセージ]"
+
+5.コミット確認
+git status
+"nothing to commit"の文言確認
+
+6.ローカルリポジトリの変更をリモートリポジトリに反映
+git remote add origin [GitHubで作成したリモートリポジトリのアドレス]
+git push [マージ先のリモートリポジトリ名] [マージ元のローカルリポジトリ名]
